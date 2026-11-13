@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Place
+  - TurretPlaced
+  - Boss
+  - Minion
+  - Turret
+  - AlienPlaced
+  - Hurtbox
+  - Pause
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Bullet
+  - Tile
+  - Minion
+  - Boss
+  - TileFilled
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: UIBG
+    uniqueID: 3913180807
+    locked: 0
+  - name: BG
+    uniqueID: 3346517129
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Bullet
+    uniqueID: 3946462649
+    locked: 0
+  - name: Settings
+    uniqueID: 3232247181
+    locked: 0
+  - name: UI
+    uniqueID: 1381234805
+    locked: 0
+  m_RenderingLayers:
+  - Default

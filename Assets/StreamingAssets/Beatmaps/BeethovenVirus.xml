@@ -1,0 +1,337 @@
+<!-- 
+The <Length> property is based on one beat. 
+For example, in 4/4, "2" refers to 2 crotchet beats, and 1.5 refers to 1.5 crotchet or 3 quaver beats.
+-->
+<Beatmap name="Beethoven Virus">
+	<SongProperty tempo="156" pickup="0" beatsPerBar="4" />
+	<Structure>
+		<!-- Introduction -->
+		<Segment name="intro" isUptime="true">
+			<Beat length="1.5" type="note" />
+			<Beat length="1.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="4" type="rest" />
+
+			<Beat length="1.5" type="note" />
+			<Beat length="1.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="4" type="rest" />
+
+			<Beat length="1.5" type="note" />
+			<Beat length="1.5" type="note" />
+			<Beat length="1.5" type="note" />
+			<Beat length="1.5" type="note" />
+			<Beat length="1.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="1.5" type="note" />
+			<Beat length="1.5" type="note" />
+			<Beat length="1.5" type="note" />
+			<Beat length="1.5" type="note" />
+			<Beat length="0.5" type="note" />
+		</Segment>
+		<!-- End of introduction -->
+		<!-- Chorus -->
+		<Segment name="chorus1" isUptime="true">
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="1.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="1.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="2.5" type="note" />
+			<Beat length="0.25" type="note" />
+			<Beat length="0.25" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="1" type="note" />
+			<Beat length="1" type="note" />
+			<Beat length="1" type="note" />
+			<Beat length="1" type="note" />
+
+			<Beat length="3" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="2" type="note" />
+			<Beat length="1" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="2" type="note" />
+			<Beat length="1" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="1.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="1.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="2.5" type="note" />
+			<!--Repeat chorus-->
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="1.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="1.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="2.5" type="note" />
+			<Beat length="0.25" type="note" />
+			<Beat length="0.25" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="1" type="note" />
+			<Beat length="1" type="note" />
+			<Beat length="1" type="note" />
+			<Beat length="1" type="note" />
+
+			<Beat length="3" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="2" type="note" />
+			<Beat length="1" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="2" type="note" />
+			<Beat length="1" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="1.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="1.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="2.5" type="note" levelEvent="jump" target="chorus1" />
+		</Segment>
+		<Segment name="verse1" isUptime="true">
+			<!--Verse 1-->	
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="1" type="note" />
+			<Beat length="1" type="rest" />
+			
+			<!--E arpeggio to A min-->
+			<Beat length="1.5" type="note" />
+			<Beat length="0.25" type="note" />
+			<Beat length="0.25" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<!-- A min running notes -->
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="right" />
+
+			<!-- G arpeggio to C maj -->
+			<Beat length="1.5" type="note" />
+			<Beat length="0.25" type="note" />
+			<Beat length="0.25" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<!-- C maj running notes -->
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="right" />
+
+			<!-- C# dim7 to D min -->
+			<Beat length="1.5" type="note" />
+			<Beat length="0.25" type="note" dir="up" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="down" />
+			<Beat length="0.25" type="note" dir="up" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="down" />
+			<Beat length="0.25" type="note" dir="up" />
+			<Beat length="0.25" type="note" dir="right" />
+
+			<Beat length="0.5" type="note" />
+			<Beat length="0.25" type="note" />
+			<Beat length="0.25" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<!-- B maj to E maj -->
+			<Beat length="1.5" type="note" />
+			<Beat length="0.25" type="note" />
+			<Beat length="0.25" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			
+			<!-- E7 arpeggio -->
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="down" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="up" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="down" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="up" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="down" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="up" />
+			<Beat length="0.25" type="note" dir="left" />
+			<Beat length="0.25" type="note" dir="down" />
+			<Beat length="0.25" type="note" dir="right" />
+			<Beat length="0.25" type="note" dir="up" />
+			
+			<!-- Transition to chorus -->
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" />
+			<Beat length="0.5" type="note" levelEvent="jump" target="chorus1" />
+			<!--<Beat length="0" type="rest" levelEvent="seek" target="chorus1" />-->
+		</Segment>
+	</Structure>
+</Beatmap>

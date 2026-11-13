@@ -1,0 +1,618 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3053385969846649024
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5690907785733113795}
+  - component: {fileID: 7951549300676646910}
+  - component: {fileID: 2837289085893117652}
+  - component: {fileID: 4261663235650335007}
+  m_Layer: 5
+  m_Name: Tutorial Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &5690907785733113795
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3053385969846649024}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -8999.998}
+  m_LocalScale: {x: 2.7809994, y: 2.7809994, z: 2.7809994}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 34.984375, y: -59.95117}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7951549300676646910
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3053385969846649024}
+  m_CullTransparentMesh: 1
+--- !u!114 &2837289085893117652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3053385969846649024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4261663235650335007
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3053385969846649024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2467244c7305ee14c91de3c98b7bb085, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TutorialManager
+  scriptLines:
+  - sentence: 'This is your battle interface, where you will control the flow of
+      the battle.
+
+      From here, you will be able to defend against the enemy''s
+      attacks while setting up our own counterattack.'
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    X: 0
+    Y: 0
+  - sentence: Stop Cutscene
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: StopCutscene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 0
+    Y: 0
+  - sentence: 'Can you feel the beat? The enemy relies on chaotic transmissions,
+      but we fight back using synchronization pulses. Try pressing the correct input
+      keys to the rhythm. (Note: You can change input keys in the settings on the
+      main menu.) '
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: highlightarrows
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 0
+    Y: -2.5
+  - sentence: Stop Cutscene
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: highlightstop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: StopCutscene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 0
+    Y: 0
+  - sentence: "Depending on how precise your timing is, the strength of your rhythm
+      hit varies\u2014ranging from regular hits to clean 'Perfects' that deal direct
+      damage to the enemy boss. However, any missed will cause you to take damage."
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: highlightstop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 0
+    Y: -2.5
+  - sentence: The bosses health is visualised using the red bar here. We'll win when
+      the bar empties out.
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: highlightboss
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 0
+    Y: 3
+  - sentence: Your health is visualised using the position of this red needle. If
+      it reaches all the way to the left side, our base will fall.
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: highlighthealth
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 5
+    Y: 1.7
+  - sentence: 'At anytime, you can also hold down the Control Key and press the inputs
+      to trigger COMBOs. (Note: You can change the control key and the input keys
+      in the settings on the main menu.) '
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: highlightstop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 5
+    Y: 0.2
+  - sentence: 'Any inputs for the COMBO will be stored here. If there is a mistake
+      for one of the inputs, you will have to fill in the remaining slots for it
+      to reset. '
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: highlightcurrent
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 5
+    Y: 0.2
+  - sentence: 'The COMBOs that you have access to will displayed here. Each COMBO
+      will have a different effect, so you can experiment with them. '
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: highlightavailable
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 5
+    Y: -3.3
+  - sentence: Stop Cutscene
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: StopCutscene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: highlightstop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 0
+    Y: 0
+  - sentence: 'Depending on how precise you were on the timing of each note of the
+      COMBO, its strength can vary. '
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    X: 5
+    Y: 0.2
+  - sentence: "Now that you\u2019ve triggered that COMBO, it enters a cooldown period.
+      Trying to fully activate it before the cooldown finishes won't work, so timing
+      is everything. "
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: highlightavailable
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 5
+    Y: -3.3
+  - sentence: 'Great work. Look at that currency counter go up! Now you''ve got enough
+      resources to deploy some automated backup. '
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: highlightcurrency
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 0
+    Y: 0
+  - sentence: 'These are your defense turrets. Each has its own cost and combat style.
+      Drag a turret from the shop panel and drop it directly onto a grid tile to
+      purchase it. '
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: highlightshop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: -5
+    Y: 3
+  - sentence: Stop Cutscene
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: StopCutscene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: highlightstop
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 0
+    Y: 0
+  - sentence: 'Remember, you can only place one turret per tile, so plan your layout
+      carefully. Once placed, it will automatically target and fire at incoming threats
+      until either the enemy breaks or the tower takes too much damage. '
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    X: 0
+    Y: 0
+  - sentence: "Nice shooting from the turret. But watch out\u2014if a minion slips
+      past your defenses and reaches our base grid, it'll chunk our main health bar. "
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    X: 0
+    Y: 0
+  - sentence: 'Alright, rookie! That''s the core of it. Do you want to finish this
+      boss off yourself, or do you need me to step in and save your skin? '
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: popup
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 0
+    Y: 0
+  - sentence: "Haha, fair enough. I\u2019ll finish this one off. Take a breather.
+      I know it\u2019s a lot to process on day one! "
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: popupdeactivate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 0
+    Y: 0
+  - sentence: "Haha, fair enough. I\u2019ll finish this one off. Take a breather.
+      I know it\u2019s a lot to process on day one! "
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: removebox
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GoToScene, Assembly-CSharp
+          m_MethodName: TitleScreen
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 0
+    Y: 0
+  - sentence: All right. Show me what you got.
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: popupdeactivate
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 0
+    Y: 0
+  - sentence: Stop Cutscene
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: StopCutscene
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 0
+    Y: 0
+  - sentence: Not bad for your first day on the job, rookie. You might actually survive
+      out here.
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    X: 0
+    Y: 0
+  - sentence: Not bad for your first day on the job, rookie. You might actually survive
+      out here.
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: removebox
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GoToScene, Assembly-CSharp
+          m_MethodName: TitleScreen
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 0
+    Y: 0
+  - sentence: Perhaps you need a little more training. I'll take over from here.
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls: []
+    X: 0
+    Y: 0
+  - sentence: Perhaps you need a little more training. I'll take over from here.
+    onLineStart:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4261663235650335007}
+          m_TargetAssemblyTypeName: TutorialManager, Assembly-CSharp
+          m_MethodName: removebox
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GoToScene, Assembly-CSharp
+          m_MethodName: TitleScreen
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    X: 0
+    Y: 0
+  TextBox: {fileID: 3753271900185743461, guid: 1d7787c227ea18648a3185ace338b438, type: 3}
+  Canvas: {fileID: 0}
+  HighlightHealth: {fileID: 2977694973414356734, guid: 410bc3181afad254586b7d4972f46092, type: 3}
+  HighlightCurrent: {fileID: 3898411489463569667, guid: 29b46c043f533fc4d8e06e5d5ae4ba9d, type: 3}
+  HighlightAvailable: {fileID: 4067821258951366032, guid: 03771db2342636c4cb1c19c955505f59, type: 3}
+  HighlightShop: {fileID: 544473037188670298, guid: 81b1b5f713816a149af598cd9db770f5, type: 3}
+  HighlightCurrency: {fileID: 8847621377983226930, guid: 556ef491a93997540bc6cdf4508eab46, type: 3}
+  HighlightBoss: {fileID: 3742513510378422752, guid: b9319a4b19dc7564b884865cf3f61c94, type: 3}
+  HighlightArrows: {fileID: 5581204063897024866, guid: 1b7c02f35ec797b4fa51548c60135ea8, type: 3}
+  musicManager: {fileID: 0}
+  Popup: {fileID: 0}

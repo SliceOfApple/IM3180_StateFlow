@@ -1,0 +1,251 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Xml;
+using System.Xml.Serialization;
+using TMPro;
+using UnityEngine;
+using UnityEngine.UI;
+using static Utilities;
+
+public class GameManager : MonoBehaviour
+{
+    private static GameManager _gameManager; // Singleton.
+    public static GameManager instance { get { return _gameManager; } }
+
+    public TMP_Text hitIndicator;
+
+    private XmlDocument currentLevelBeatmap;
+
+    public GameObject lanes;
+    public GameObject leftArrowPrefab, 
+                      upArrowPrefab, 
+                      downArrowPrefab, 
+                      rightArrowPrefab;
+
+    public GameObject beatIndicator1, beatIndicator2;
+
+    public Transform[] lanePositions;
+    private bool IsGamePaused = false;
+
+    // Active arrows created.
+    public List<GameObject> arrows_left,
+                            arrows_up,
+                            arrows_down,
+                            arrows_right;
+
+    // Beatmap data.
+    public List<Segment> segments = new List<Segment>();
+    public List<Beat> beats = new List<Beat>();
+    public int NextEventTimestamp = 0;
+    public int ASDHSADHSADSUD = 0;
+
+    // Player accuracy.
+    public int hitMiss = 0,
+               hitEarly = 0,
+               hitLate = 0,
+               hitOk = 0,
+               hitGood = 0,
+               hitPerfect = 0;
+
+    // Audio settings
+    public float audioDelay = 0; // in seconds
+
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        if (_gameManager == null)
+        {
+            _gameManager = this;
+        }
+        else
+        {
+            throw new InvalidOperationException("Game manager is already instantiated.");
+        }
+
+        currentLevelBeatmap = new XmlDocument();
+
+        lanePositions = lanes.GetComponentsInChildren<Transform>(); // Index 0 Transform is from the parent itself. Ignore it.
+        List<Arrow> arrows_left = new List<Arrow>();
+        List<Arrow> arrows_up = new List<Arrow>();
+        List<Arrow> arrows_down = new List<Arrow>();
+        List<Arrow> arrows_right = new List<Arrow>();
+
+        DontDestroyOnLoad(gameObject);
+
+        //LoadBeatmap("Assets/Beatmaps/BeethovenVirus.xml");
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public void CheckArrow(ArrowDirection dir)
+    {
+        // Check appropriate lane.
+        List<GameObject> laneToCheck = null;
+        if (dir == ArrowDirection.LEFT) laneToCheck = arrows_left;
+        if (dir == ArrowDirection.RIGHT) laneToCheck = arrows_right;
+        if (dir == ArrowDirection.UP) laneToCheck = arrows_up;
+        if (dir == ArrowDirection.DOWN) laneToCheck = arrows_down;
+
+        Arrow earliestArrow = laneToCheck[0].GetComponent<Arrow>();
+        //HitAccuracy accuracy = earliestArrow!.CheckAccuracy();
+        HitAccuracy accuracy = MusicManager.instance.CheckAccuracy(earliestArrow);
+
+        if (accuracy != HitAccuracy.NA)
+        {
+            laneToCheck.RemoveAt(0);
+            Destroy(earliestArrow.gameObject);
+
+            switch(accuracy)
+            {
+                case HitAccuracy.PERFECT:
+                    hitPerfect += 1;
+                    hitIndicator.text = "Perfect!!";
+                    hitIndicator.color = Color.hotPink;
+                    break;
+                case HitAccuracy.GOOD:
+                    hitIndicator.text = "Good!";
+                    hitIndicator.color = Color.lightSeaGreen;
+                    hitGood += 1;
+                    break;
+                case HitAccuracy.OK:
+                    hitIndicator.text = "OK...";
+                    hitIndicator.color = Color.darkGreen;
+                    hitOk += 1;
+                    break;
+                case HitAccuracy.EARLY:
+                    hitIndicator.text = "Early";
+                    hitIndicator.color = Color.orangeRed;
+                    hitEarly += 1;
+                    break;
+                case HitAccuracy.LATE:
+                    hitIndicator.text = "Late";
+                    hitIndicator.color = Color.orangeRed;
+                    hitLate += 1;
+                    break;
+                case HitAccuracy.MISS:
+                    hitIndicator.text = "! MISS !";
+                    hitIndicator.color = Color.paleVioletRed;
+                    hitMiss += 1;
+                    break;
+            }
+        }
+    }
+
+    public void ToggleGame() => IsGamePaused = !IsGamePaused;
+
+    public void SpawnArrow()
+    {
+        int random = UnityEngine.Random.Range(1, 5);
+
+        // TODO - Replace this with better sprites instead of wack shapes.
+        switch (random)
+        {
+            case 1:
+                GameObject leftArrow = Instantiate(leftArrowPrefab, lanePositions[1]);
+                leftArrow.GetComponent<Arrow>().arrowDirection = ArrowDirection.LEFT;
+                arrows_left.Add(leftArrow);
+                break;
+            case 2:
+                GameObject upArrow = Instantiate(upArrowPrefab, lanePositions[2]);
+                upArrow.GetComponent<Arrow>().arrowDirection = ArrowDirection.UP;
+                arrows_up.Add(upArrow);
+                break;
+            case 3:
+                GameObject downArrow = Instantiate(downArrowPrefab, lanePositions[3]);
+                downArrow.GetComponent<Arrow>().arrowDirection = ArrowDirection.DOWN;
+                arrows_down.Add(downArrow);
+                break;
+            case 4:
+                GameObject rightArrow = Instantiate(rightArrowPrefab, lanePositions[4]);
+                rightArrow.GetComponent<Arrow>().arrowDirection = ArrowDirection.RIGHT;
+                arrows_right.Add(rightArrow);
+                break;
+        }
+        //Instantiate(arrowPrefab, lanePositions[UnityEngine.Random.Range(1, 5)]);
+    }
+
+    // Not in use for now.
+    public void RemoveArrow()
+    {
+
+    }
+
+    public void LoadBeatmap(String path)
+    {
+        XmlSerializer serializer = new XmlSerializer(typeof(Beatmap));
+
+        using (StreamReader reader = new StreamReader(path))
+        {
+            Beatmap beatmap = (Beatmap) serializer.Deserialize(reader);
+
+            int tempo = beatmap.SongProperty.tempo;
+            var loadedSegments = beatmap.Structure.Segments;
+
+            Debug.Log($@"Beatmap ""{beatmap.name}"" loaded.
+                PROPERTY: Tempo - {tempo}; Pickup Beats - {beatmap.SongProperty.pickup}
+                No. of Segments - {loadedSegments.Count}
+            ");
+
+            MusicManager.instance.BPM = tempo;
+            MusicManager.instance.secPerBeat = 60f / tempo;
+
+            foreach (Segment segment in loadedSegments)
+            {
+                Debug.Log($@"Segment ""{segment.name}"" 
+                    isUptime: {segment.isUptime}
+                    No. of Beats: {segment.Beats.Count}
+                ");
+
+                Debug.Log(segments.Count);
+
+                segments.Add(segment);
+            }
+        }
+
+        //currentLevelBeatmap.Load(path);
+
+        //foreach (XmlNode node in currentLevelBeatmap.DocumentElement.ChildNodes)
+        //{
+        //    if ("#comment".Equals(node.Name)) continue;
+        //    Debug.Log("Exploring parent node " + node.Name);
+
+        //    foreach (XmlNode innerNode in node.ChildNodes)
+        //    {
+        //        if ("#comment".Equals(innerNode.Name)) continue;
+        //        Debug.Log("Child node: " + innerNode.Name);
+        //    }
+        //    //if (node.Name == "Audio")
+        //    //{
+        //    //    audioDelay = float.Parse(node.Attributes["delay"].Value);
+        //    //}
+        //}
+    }
+
+    public void StartLevel()
+    {
+        // Load the first segment's beats into the beat list. By convention, this is usually an intro.
+        beats.AddRange(segments[0].Beats);
+    }
+
+    public void NextBeat()
+    {
+        if (IsGamePaused) return;
+
+        var ind1 = beatIndicator1.GetComponent<Image>();
+        var ind2 = beatIndicator2.GetComponent<Image>();
+        ind1.color = new Color(ind1.color.r, ind1.color.g, ind1.color.b, 1);
+        ind2.color = new Color(ind2.color.r, ind2.color.g, ind2.color.b, 1);
+
+        SpawnArrow();
+    }
+
+    public void NextEvent()
+    {
+
+    }
+}

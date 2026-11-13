@@ -1,0 +1,66 @@
+<Beatmap name="Tutorial">
+	<SongProperty tempo="135" pickup="0" beatsPerBar="4" />
+	<Structure>
+		<!-- Introduction -->
+		<Segment name="intro" isUptime="true">
+			<Beat length="8" type="rest" />
+		</Segment>
+		<Segment name="transition1" isUptime="false">
+      <Beat length="8" type="rest" />
+		</Segment>
+		<Segment name="intro1" isUptime="true">
+			<Beat length="2" type="note" dir="left"/>
+			<Beat length="2" type="note" dir="up"/>
+			<Beat length="2" type="note" dir="down"/>
+			<Beat length="2" type="note" dir="right"/>
+			<Beat length="2" type="note" />
+			<Beat length="2" type="note" />
+			<Beat length="2" type="note" />
+			<Beat length="2" type="note" />
+			<Beat length="2" type="note" />
+			<Beat length="2" type="note" />
+			<Beat length="2" type="note" />
+			<Beat length="2" type="note" />
+			<Beat length="2" type="note" />
+			<Beat length="2" type="note" />
+			<Beat length="2" type="note" />
+		</Segment>
+		<Segment name="stop" isUptime="false">
+      <Beat length="28" type="rest" />
+      <Beat length="1" type="rest" />
+      <Beat length="1" type="rest" />
+      <Beat length="1" type="rest" />
+      <Beat length="1" type="rest" />
+			<!--<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" />
+			<Beat length="1" type="rest" levelEvent="jump" target="stop" />-->
+			<!--<Beat length="22" type="rest" levelEvent="jump" target="intro2"  />-->
+		</Segment>
+    <Segment name="finale" isUptime="false">
+      <Beat length="14" type="rest" />
+      <Beat length="1" type="rest" />
+      <Beat length="1" type="rest" />
+      <Beat length="1" type="rest" />
+      <Beat length="1" type="rest" levelEvent="jump" target="stop" />
+    </Segment>
+	</Structure>
+</Beatmap>

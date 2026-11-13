@@ -1,0 +1,252 @@
+<Beatmap name="No4Tarantella">
+	<SongProperty tempo="192" pickup="0" beatsPerBar="2" />
+	<Structure>
+    <!-- Introduction -->
+		<Segment name="intro" isUptime="true">
+      
+			<Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+
+      <Beat length="3" type="note"/>
+      <Beat length="1" type="note"/>
+
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+
+      <Beat length="1" type="note"/>
+      <!-- Descent -->
+      <Beat length="0.66667" type="rest"/>
+      <Beat length="0.33333" type="note" dir="left"/>
+
+      <Beat length="0.66667" type="note" dir="right"/>
+      <Beat length="0.33333" type="note" dir="left"/>
+      <Beat length="0.66667" type="note" dir="right"/>
+      <Beat length="0.33333" type="note" dir="left"/>
+
+      <Beat length="0.66667" type="note" dir="right"/>
+      <Beat length="0.33333" type="note" dir="left"/>
+      <Beat length="0.66667" type="note" dir="right"/>
+      <Beat length="0.33333" type="note" dir="left"/>
+
+      <Beat length="0.66667" type="note" dir="right"/>
+      <Beat length="0.33333" type="note" dir="left"/>
+      <Beat length="0.66667" type="note" dir="right"/>
+      <Beat length="0.33333" type="note" dir="left"/>
+
+      <Beat length="0.66667" type="note" dir="right"/>
+      <Beat length="0.33333" type="note" dir="left"/>
+      <Beat length="0.66667" type="note" dir="right"/>
+      <Beat length="0.33333" type="note" dir="left"/>
+
+      <Beat length="0.66667" type="note" dir="right"/>
+      <Beat length="0.33333" type="note" dir="left"/>
+      <Beat length="0.66667" type="note" dir="right"/>
+      <Beat length="0.33333" type="note" dir="left"/>
+
+      <Beat length="2" type="note" dir="up"/>
+      <Beat length="2" type="note" dir="down"/>
+
+      <Beat length="2" type="rest"/>
+      <Beat length="2" type="rest"/>
+		</Segment>
+    <Segment name="theme1_1" isUptime="false">
+      <Beat length="28" type="rest"/>
+      <Beat length="1" type="rest"/>
+      <Beat length="1" type="rest"/>
+      <Beat length="1" type="rest"/>
+      <Beat length="1" type="rest"/>
+    </Segment>
+    <Segment name="theme1_2" isUptime="true">
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+
+      <!-- Leakover into next measure -->
+      <Beat length="1" type="note"/>
+    </Segment>
+    <Segment name="transition1_1" isUptime="false">
+      <Beat length="11" type="rest"/>
+      <Beat length="1" type="rest"/>
+      <Beat length="1" type="rest"/>
+      <Beat length="1" type="rest"/>
+      <Beat length="1" type="rest"/>
+      
+      <!-- Lekaover into next measure -->
+      <Beat length="1" type="rest"/>
+    </Segment>
+    <Segment name="transition1_2" isUptime="true">
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="2" type="note"/>
+      <Beat length="2" type="note"/>
+      
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="2" type="note"/>
+      <Beat length="2" type="note"/>
+      
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+
+      <Beat length="2" type="note"/>
+      <Beat length="2" type="note"/>
+      <Beat length="3" type="note"/>
+      
+      <Beat length="1" type="rest"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="2" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <!-- 46 up till here -->
+      <!-- Leakover into next measure -->
+      <Beat length="1" type="note"/>
+    </Segment>
+    <Segment name="theme_1_3" isUptime="false">
+      <Beat length="27" type="rest"/>
+      <Beat length="1" type="rest"/>
+      <Beat length="1" type="rest"/>
+      <Beat length="1" type="rest"/>
+      <Beat length="1" type="rest"/>
+      <Beat length="1" type="rest"/>
+    </Segment>
+    <Segment name="transition_2_1" isUptime="true">
+      <!-- Shift to 3/4 -->
+      <Beat length="0.0000001" type="note" dir="left"/>
+      <Beat length="0.0000001" type="note" dir="right"/>
+      <Beat length="0.0000001" type="note" dir="up"/>
+      <Beat length="1.9999997" type="note" dir="down"/>
+
+      <Beat length="0.6666667" type="note"/>
+      <Beat length="0.6666667" type="note"/>
+      <Beat length="0.6666667" type="note"/>
+
+      <Beat length="4" type="note"/>
+
+      <Beat length="0.6666667" type="note"/>
+      <Beat length="0.6666667" type="note"/>
+      <Beat length="0.6666667" type="note"/>
+
+      <Beat length="0.6666667" type="note"/>
+      <Beat length="0.6666667" type="note"/>
+      <Beat length="0.6666667" type="note"/>
+
+      <Beat length="0.6666667" type="note"/>
+      <Beat length="0.6666667" type="note"/>
+      <Beat length="0.6666667" type="note"/>
+
+      <Beat length="2" type="note"/>
+
+      <Beat length="0.0000001" type="note" dir="left"/>
+      <Beat length="0.0000001" type="note" dir="right"/>
+      <Beat length="0.0000001" type="note" dir="up"/>
+      <Beat length="1.9999997" type="note" dir="down"/>
+
+      <Beat length="0.6666667" type="note"/>
+      <Beat length="0.6666667" type="note"/>
+      <Beat length="0.6666667" type="note"/>
+
+      <Beat length="4" type="note"/>
+
+      <Beat length="0.6666667" type="note"/>
+      <Beat length="0.6666667" type="note"/>
+      <Beat length="0.6666667" type="note"/>
+
+      <Beat length="0.6666667" type="note"/>
+      <Beat length="0.6666667" type="note"/>
+      <Beat length="0.6666667" type="note"/>
+
+      <Beat length="0.6666667" type="note"/>
+      <Beat length="0.6666667" type="note"/>
+      <Beat length="0.6666667" type="note"/>
+
+      <Beat length="2" type="note"/>
+    </Segment>
+    <Segment name="transition_2_2" isUptime="false">
+      <Beat length="24" type="rest"/>
+      <Beat length="1" type="rest"/>
+      <Beat length="1" type="rest"/>
+      <Beat length="1" type="rest"/>
+      <Beat length="1" type="rest"/>
+    </Segment>
+    <Segment name="transition_2_3" isUptime="true">
+      <Beat length="2" type="note"/>
+      <Beat length="2" type="note"/>
+        
+      <Beat length="2" type="note"/>
+      <Beat length="3" type="note"/>
+      <Beat length="2" type="note"/>
+      <Beat length="1" type="note"/>
+      
+      <Beat length="3" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="2" type="note"/>
+      <Beat length="2" type="note"/>
+      
+      <Beat length="3" type="note"/>
+      <Beat length="1" type="note"/>
+      
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+    </Segment>
+    <Segment name="outro" isUptime="false">
+      <Beat length="20" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note"/>
+      <Beat length="1" type="note" levelEvent="jump" target="theme1_1"/>
+    </Segment>
+	</Structure>
+</Beatmap>
