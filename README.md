@@ -16,6 +16,6 @@ The game features three levels, with the player's objective being to destroy the
 Regarding any inquiry on the project, team members, assets or other matters, please write an email to **ONGW0120@e.ntu.edu.sg**.
 
 ## Copyright
-_**THIS IS AN ACADEMIC WORK SUBMITTED AS A DELIVERABLE FOR THE COURSE IM3180. IP AND COPYRIGHT IS THEREFORE OWNED BY NANYANG TECHNOLOGICAL UNIVERSITY.**_
+_**THIS IS AN ACADEMIC WORK SUBMITTED AS A DELIVERABLE FOR THE COURSE IM3180. IP AND COPYRIGHT ARE THEREFORE OWNED BY NANYANG TECHNOLOGICAL UNIVERSITY.**_
 
-_**MODIFICATION, DISTRIBUTION AND THE MAKING OF DERIVATIVES ARE NOT ALLOWED.**_
+_**No part of this work may be reproduced, distributed, modified, or used to create derivative works without the prior written permission of the copyright owner, except as permitted under the Singapore Copyright Act 2021.**_
